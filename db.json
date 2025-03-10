@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": "b6fc",
+      "username": "dhruvi02",
+      "email": "dhruvi@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "5deb",
+      "username": "dixita01",
+      "email": "dixita@gmail.com",
+      "password": "123456",
+      "phone": "1234567899",
+      "address": "surat, gujarat, india"
+    },
+    {
+      "id": "6b7b",
+      "username": "shruti03",
+      "email": "shruti@gmail.com",
+      "password": "123456",
+      "phone": "1234567898",
+      "address": "surat, gujarat, india"
+    },
+    {
+      "id": "1294",
+      "username": "shruti.m",
+      "email": "shruti.m@gmail.com",
+      "password": "123456",
+      "phone": "1234567897",
+      "address": "surat, gujarati, india"
+    },
+    {
+      "id": "cf59",
+      "username": "darsh",
+      "email": "darsh@gmail.com",
+      "password": "123456",
+      "phone": "1234567894",
+      "address": "surat, gujarat"
+    },
+    {
+      "id": "7a1c",
+      "username": "dhruvi",
+      "email": "dhruvi.g@gmail.com",
+      "password": "000000",
+      "phone": "9876543210",
+      "address": "surat, gujarat, india"
+    },
+    {
+      "id": "1825",
+      "username": "asdasd",
+      "email": "askjas@gmail.com",
+      "password": "123456",
+      "phone": "1234512345",
+      "address": "sknsadjdsa kjnsd"
+    },
+    {
+      "id": "6a2e",
+      "username": "priyanshi",
+      "email": "p@gmail.com",
+      "password": "123456",
+      "phone": "1234561234",
+      "address": "surat, gujarat, india"
+    }
+  ]
+}
