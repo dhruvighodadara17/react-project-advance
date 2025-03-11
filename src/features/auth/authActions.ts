@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
-import { signupApi } from '../../services/authService'
+import { updateProfileApi } from '../../services/authService'
+import { signupApi, loginApi } from '../../services/authService'
 
 interface SignupData {
   username: string
@@ -16,6 +17,39 @@ export const signupUser = createAsyncThunk(
       return response
     } catch (error) {
       return rejectWithValue((error as Error).message || 'An unknown error occurred')
+    }
+  },
+)
+
+// import {  } from '../../services/authService'
+
+interface LoginData {
+  identifier: string
+  password: string
+}
+
+export const loginUser = createAsyncThunk(
+  'auth/loginUser',
+  async (loginData: LoginData, { rejectWithValue }) => {
+    try {
+      const user = await loginApi(loginData)
+      return user
+    } catch (error) {
+      return rejectWithValue((error as Error).message || 'Invalid credentials')
+    }
+  },
+)
+
+//update user profile
+
+export const updateProfile = createAsyncThunk(
+  'auth/updateProfile',
+  async ({ userId, formData }: { userId: number; formData: FormData }, { rejectWithValue }) => {
+    try {
+      const updatedUser = await updateProfileApi(userId, formData)
+      return updatedUser
+    } catch (error) {
+      return rejectWithValue('Failed to update profile')
     }
   },
 )

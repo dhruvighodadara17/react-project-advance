@@ -4,7 +4,12 @@
       "id": "b6fc",
       "username": "dhruvi02",
       "email": "dhruvi@gmail.com",
-      "password": "123456"
+      "password": "123456",
+      "fullName": "dhruvi02",
+      "birthDate": "2025-03-03",
+      "city": "Los Angeles",
+      "profilePhoto": {},
+      "resume": {}
     },
     {
       "id": "5deb",
@@ -61,6 +66,14 @@
       "password": "123456",
       "phone": "1234561234",
       "address": "surat, gujarat, india"
+    },
+    {
+      "id": "a417",
+      "username": "Mansvi_002",
+      "email": "mansvi@gmail.com",
+      "password": "112233",
+      "phone": "9979725534",
+      "address": "surat, gujarat"
     }
   ]
 }

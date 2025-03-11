@@ -1,16 +1,9 @@
 import React from 'react'
-import { Provider } from 'react-redux'
-import { store } from './redux/store'
-import SignupPage from '@pages/SIgnupPage'
+import AppRoutes from './routes/AppRoutes'
 import './styles/global.css'
 
-
-const App: React.FC = () => (
-  <Provider store={store}>
-    <div>
-      <SignupPage />
-    </div>
-  </Provider>
-)
+const App: React.FC = () => {
+  return <AppRoutes />
+}
 
 export default App
