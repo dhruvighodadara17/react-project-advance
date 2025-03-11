@@ -49,7 +49,7 @@ export const updateProfile = createAsyncThunk(
       const updatedUser = await updateProfileApi(userId, formData)
       return updatedUser
     } catch (error) {
-      return rejectWithValue('Failed to update profile')
+      return rejectWithValue((error as Error).message || 'Failed to update profile')
     }
   },
 )
