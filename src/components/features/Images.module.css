@@ -9,13 +9,15 @@
 .imageCard {
   /* display: grid; */
   /* grid-template-columns: 4fr auto; */
+  width: fit-content;
+  height: fit-content;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
 }
 .image {
-  width: 100%;
+  width: 150px;
   height: 150px;
   object-fit: cover;
   position: static;

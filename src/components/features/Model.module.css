@@ -1,13 +1,13 @@
 container {
-  text-align: 'center';
-  padding: '20px';
+  text-align: center;
+  padding: 20px;
 }
 button {
-  background-color: '#4a90e2';
-  color: '#fff';
-  border: 'none';
-  padding: '10px 20px';
-  border-radius: '4px';
-  cursor: 'pointer';
-  margin-top: '15px';
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
 }
