@@ -1,0 +1,19 @@
+.searchContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 250px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.searchInput:focus {
+  border: 1px solid #4a90e2;
+}

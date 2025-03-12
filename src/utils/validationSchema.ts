@@ -22,17 +22,18 @@ export const loginSchema = Yup.object().shape({
 // Validation Schema for Profile Form
 export const validationSchema = Yup.object({
   fullName: Yup.string()
-    .required('Full name is required')
+    // .required('Full name is required')
     .min(3, 'Full name must be at least 3 characters'),
 
   birthDate: Yup.date()
-    .required('Date of birth is required')
+    // .required('Date of birth is required')
     .max(new Date(), 'Date of birth cannot be in the future'),
 
-  city: Yup.string().required('Please select a city'),
+  city: Yup.string(),
+  // required('Please select a city'),
 
   profilePhoto: Yup.mixed<File>()
-    .required('Profile photo is required')
+    // .required('Profile photo is required')
     .test(
       'fileFormat',
       'Only PNG/JPG files are allowed',
@@ -45,7 +46,7 @@ export const validationSchema = Yup.object({
     ),
 
   resume: Yup.mixed<File>()
-    .required('Resume is required')
+    // .required('Resume is required')
     .test(
       'fileFormat',
       'Only PDF files are allowed',

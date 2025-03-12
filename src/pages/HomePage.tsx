@@ -1,5 +1,5 @@
 import React from 'react'
-import EditProfileForm from '../components/EditProfileForm'
+import EditProfileForm from '@components/form/EditProfileForm/EditProfileForm'
 import { useAppSelector } from '../app/hooks'
 import { useNavigate } from 'react-router-dom'
 

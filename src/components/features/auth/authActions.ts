@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
-import { updateProfileApi } from '../../services/authService'
-import { signupApi, loginApi } from '../../services/authService'
+import { updateProfileApi, signupApi, loginApi } from '../../../services/authService'
+// import { File } from 'buffer'
 
 interface SignupData {
   username: string
@@ -41,6 +41,11 @@ export const loginUser = createAsyncThunk(
 )
 
 //update user profile
+
+// interface formData {
+//   // profilePhoto: File
+//   // password: string
+// }
 
 export const updateProfile = createAsyncThunk(
   'auth/updateProfile',

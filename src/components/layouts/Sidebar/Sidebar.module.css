@@ -1,0 +1,40 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #357abd;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #4a90e2;
+  
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease-in-out;
+}
+
+.sidebar li:hover .icon {
+  color: #1d3557; /* Darker color on hover */
+  transform: scale(1.2); /* Slight zoom-in on hover */
+}

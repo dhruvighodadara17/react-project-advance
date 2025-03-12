@@ -1,0 +1,25 @@
+.header {
+  /* width: 1000px; */
+  display: flex;
+  justify-content: flex-end;
+  background-color: #4a90e2;
+  padding: 15px 30px;
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.username {
+  font-weight: bold;
+}

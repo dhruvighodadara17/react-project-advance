@@ -6,6 +6,8 @@ interface AuthState {
     id: number | undefined // ✅ Add this line
     username: string
     email: string
+    resume: string
+    profilePhoto: string
   } | null
   loading: boolean
   error: string | null

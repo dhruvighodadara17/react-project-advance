@@ -2,9 +2,9 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { loginSchema } from '../utils/validationSchema'
-import { useAppDispatch, useAppSelector } from '../app/hooks'
-import { loginUser } from '../features/auth/authActions'
+import { loginSchema } from '../../../utils/validationSchema'
+import { useAppDispatch, useAppSelector } from '../../../app/hooks'
+import { loginUser } from '../../features/auth/authActions'
 
 // Import CSS Module
 import styles from './LoginForm.module.css'
@@ -36,6 +36,8 @@ const LoginForm: React.FC = () => {
     if (loginUser.fulfilled.match(result)) {
       // alert('Signup successful! 🎉')
       navigate('/home')
+      // temparary comment
+      // navigate('/dashboard')
     }
   }
 

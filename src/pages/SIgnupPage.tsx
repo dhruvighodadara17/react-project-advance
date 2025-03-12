@@ -1,5 +1,5 @@
 import React from 'react'
-import SignupForm from '@components/SingupForm'
+import SignupForm from '@components/form/SignupForm/SingupForm'
 
 const SignupPage: React.FC = () => (
   <div>

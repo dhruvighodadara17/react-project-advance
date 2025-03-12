@@ -1,7 +1,7 @@
 import React from 'react'
-import LoginForm from '../components/LoginForm'
+import LoginForm from '../components/form/LoginForm/LoginForm'
 import { Link } from 'react-router-dom'
-import styles from '../components/LoginForm.module.css'
+import styles from '@components/form/LoginForm/LoginForm.module.css'
 
 const LoginPage: React.FC = () => {
   return (

@@ -1,9 +1,10 @@
-import React, { useState }  from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 // import * as Yup from 'yup'
-import { validationSchema } from '../utils/validationSchema'
-import { useAppDispatch, useAppSelector } from '../app/hooks'
-import { updateProfile } from '../features/auth/authActions'
+import { validationSchema } from '../../../utils/validationSchema'
+import { useAppDispatch, useAppSelector } from '../../../app/hooks'
+import { updateProfile } from '../../features/auth/authActions'
 
 // Import CSS
 import styles from './EditProfileForm.module.css'
@@ -25,6 +26,8 @@ const cities = [
 
 const EditProfileForm: React.FC = () => {
   const dispatch = useAppDispatch()
+  const navigate = useNavigate()
+
   const { user } = useAppSelector((state) => state.auth)
 
   const [previewImage, setPreviewImage] = useState<string | null>(null)
@@ -56,6 +59,7 @@ const EditProfileForm: React.FC = () => {
 
     if (updateProfile.fulfilled.match(result)) {
       alert('Profile successfully updated! ✅')
+      navigate('/dashboard')
     }
   }
 

@@ -2,9 +2,9 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { signupSchema } from '../utils/validationSchema'
-import { useAppDispatch, useAppSelector } from '../app/hooks'
-import { signupUser } from '../features/auth/authActions'
+import { signupSchema } from '../../../utils/validationSchema'
+import { useAppDispatch, useAppSelector } from '../../../app/hooks'
+import { signupUser } from '../../features/auth/authActions'
 
 import styles from './SignupForm.module.css'
 
